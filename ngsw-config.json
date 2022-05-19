@@ -26,5 +26,20 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "urls": [
+        "https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/articles",
+        "https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/articles/**",
+        "https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/authors/"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 100,
+        "maxAge": "3d"
+      }
+    }
   ]
 }
