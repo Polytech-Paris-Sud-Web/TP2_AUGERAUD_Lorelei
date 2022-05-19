@@ -20,10 +20,10 @@ import { environment } from '../environments/environment';
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent},
   { path: 'articles', component: ArticlesComponent},
-  { path: 'home', component: HomePageComponent},
+  { path: '/', component: HomePageComponent},
   { path: 'articles/:id', component: ArticleComponent },
   { path: 'authors/:name', component: AuthorBioComponent},
-  { path: '', component: ArticleComponent}
+  { path: '', component: HomePageComponent}
 ]
 
 @NgModule({
