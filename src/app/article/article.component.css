@@ -12,7 +12,7 @@
         font-size: small;
     }
     button{
-        padding: 5px;
+        padding: 10px;
     }
     body:hover{
         box-shadow: 5px 5px 10px cadetblue;
