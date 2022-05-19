@@ -18,7 +18,6 @@ export class ArticlesComponent implements OnInit {
 
   ngOnInit() {
     this.articleService.getArticles().subscribe((value => {
-      console.log(value)
       this.articles = value;
     }
     ));
@@ -34,7 +33,6 @@ export class ArticlesComponent implements OnInit {
 
     newArticle(article: Article){
       this.articleService.getArticles().subscribe(value => {
-        console.log(value)
         this.articles = value;
       });
     }
