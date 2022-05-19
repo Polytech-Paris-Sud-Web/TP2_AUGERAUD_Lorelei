@@ -1,0 +1,9 @@
+
+    <body>
+        <div>
+            <h3> <a [routerLink]="['/articles',this.article.id]"> {{this.article.title}}</a></h3>
+            <p> {{this.article.content}} </p>
+            <p id="Signature"><a [routerLink]="['/authors',this.article.author]" >{{this.article.author}}</a></p>
+        </div>
+        <button (click)="delete()">Delete</button>
+    </body>

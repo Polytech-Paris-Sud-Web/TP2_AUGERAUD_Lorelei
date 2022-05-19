@@ -1,0 +1,20 @@
+{
+  "articles" : [{
+        "title": "My First Article",
+        "content": "Hello World",
+        "author": "Orangefire",
+        "id":1
+      }, {
+        "title": "Angular component",
+        "content": "Angular component looks awesome!",
+        "author": "A.L",
+        "id":2 
+      }],
+  "authors": [{
+      "name": "A.L",
+      "content": "Polytech Student"
+    }, {
+      "name": "Orangefire",
+      "content": "Polytech Professor"
+    }]
+}

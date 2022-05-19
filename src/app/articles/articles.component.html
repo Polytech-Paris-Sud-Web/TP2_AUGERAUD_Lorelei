@@ -1,0 +1,2 @@
+<app-search (searchedList)="onSearchedList($event)"></app-search>
+<app-article *ngFor="let article of this.articles" [article]=article (deletedArticle)="delete($event)"></app-article>

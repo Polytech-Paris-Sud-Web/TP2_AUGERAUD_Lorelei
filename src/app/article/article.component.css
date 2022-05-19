@@ -1,0 +1,16 @@
+    body{
+      border: solid 3px aquamarine;
+      text-align: center;
+      height: 10%;
+      width: 15%;
+    }
+    h3{
+        color:grey;
+    }
+    
+    #Signature{
+        font-size: small;
+    }
+    body:hover{
+        box-shadow: 5px 5px 10px cadetblue;
+    }
