@@ -25,23 +25,23 @@ export class ArticleService {
   constructor(private http : HttpClient) { }
 
   public getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>("http://localhost:3000/articles");
+    return this.http.get<Article[]>("https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/articles");
   }
 
   public getArticle(id:number): Observable<Article> {
-    return this.http.get<Article>("http://localhost:3000/articles/" + id);
+    return this.http.get<Article>("https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/articles/" + id);
   }
 
   public delete(id:number): Observable<Article[]> {
-    return this.http.delete<Article[]>("http://localhost:3000/articles/"+id);
+    return this.http.delete<Article[]>("https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/articles/"+id);
   }
 
   public addArticle(newArticle: RawArticle): Observable<Article> {
-    return this.http.post<Article>("http://localhost:3000/articles", newArticle);
+    return this.http.post<Article>("https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/articles", newArticle);
   }
 
   public getAuthors(): Observable<Author[]> {
-    return this.http.get<Author[]>("http://localhost:3000/authors/");
+    return this.http.get<Author[]>("https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_AUGERAUD_Lorelei/authors/");
   }
  
 
