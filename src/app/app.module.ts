@@ -13,6 +13,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AuthorBioComponent } from './author-bio/author-bio.component';
 import { SearchComponent } from './search/search.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 const appRoutes: Routes = [
@@ -43,7 +45,13 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [ArticleService],
   bootstrap: [AppComponent]
