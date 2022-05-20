@@ -4,6 +4,10 @@
       height: 10%;
       width: 15%;
     }
+    body:hover{
+        box-shadow: 5px 5px 10px cadetblue;
+    }
+
     h3{
         color:grey;
     }
@@ -11,10 +15,12 @@
     #Signature{
         font-size: 15px;
     }
+
     button{
-        padding: 10px;
         background: none;
+        padding: 10px;
     }
-    body:hover{
-        box-shadow: 5px 5px 10px cadetblue;
+    button:hover{
+        color: grey;
     }
+
