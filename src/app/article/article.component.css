@@ -13,6 +13,7 @@
     }
     button{
         padding: 10px;
+        box-shadow: 5px gray; 
     }
     body:hover{
         box-shadow: 5px 5px 10px cadetblue;
