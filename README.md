@@ -1,3 +1,6 @@
 
 Helper:
-Tom Ravanel
+Tom RAVANEL
+
+Helped:
+Florence HOUESSOU
